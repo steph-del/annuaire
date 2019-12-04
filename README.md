@@ -39,6 +39,16 @@ Cette clef sert à signer les jetons du service d'authentification.
 
 En cas de problème de sécurité (fuite de jeton admin par ex.), modifier ce fichier invalidera tous les jetons existants.
 
+## Utilisation (rappel des commandes)
+Prompt MySql :
+`mysql -u annuaire -p --host=0.0.0.0 --port=13306`
+
+Supprimer les tables existantes :
+`USE annuaire;`
+`DROP TABLE users;`
+`DROP TABLE usermeta;`
+`\q`
+
 ## gestion des rôles SSO
 Les services **utilisateur** et **auth** renvoient la liste des rôles affectés à l'utilisateur.
 
