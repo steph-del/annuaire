@@ -144,6 +144,7 @@ class SSO {
 			"iat" => time(),
 			"exp" => $exp,
 			//"nbf" => time() + 60,
+			"avatar" => '',
 			"scopes" => array("tela-botanica.org")
 		);
 		if (! empty($donnees)) {

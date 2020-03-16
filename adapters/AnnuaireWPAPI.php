@@ -242,7 +242,8 @@ class AnnuaireWPAPI extends AnnuaireAdapter {
 		// garnir les infos
 		$infos = (array) $utilisateur->data;
 		// choper l'URL de l'avatar
-		$infos['avatar_url'] = html_entity_decode(bp_core_fetch_avatar('html=false&item_id=' . $id));
+		$infos['avatar_url'] = '';
+		// $infos['avatar_url'] = html_entity_decode(bp_core_fetch_avatar('html=false&item_id=' . $id));
 
 		// 1bis) rôles SSO (permissions)
 		$infos['_roles'] = array_keys((array) $utilisateur->caps);
