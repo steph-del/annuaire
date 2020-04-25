@@ -22,7 +22,7 @@
 			"bdd": {
 				// Protocole pour PDO
 				"protocole": "mysql",
-				"hote": "db",
+				"hote": "annuaire_db",
 				"port": 3306,
 				// Nom de la base de données
 				"base": "annuaire",

@@ -2,7 +2,7 @@
 version: '3'
 services:
   # we named our first service 'web'
-  web:
+  annuaire:
     # pass a hostname to the container (optinal)
     hostname: annuaire.local
     
@@ -25,14 +25,14 @@ services:
     
     # first load the 'db' service 
     depends_on:
-      - db
+      - annuaire_db
     
     # make 'db' a known service/host inside of 'web'
     # use this to make a mysql connection to host 'db'
     links:
-      - db
+      - annuaire_db
   
-  db:
+  annuaire_db:
     # use a default image
     image: mysql:5.7
 
